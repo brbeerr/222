@@ -449,11 +449,6 @@ function completeProject(dimension, project, villagerPos) {
         `§a[Стройка завершена!] §fЖители построили "${style.name}"! §7(${project.blocksPlaced} блоков)`
       );
     }
-
-    // Фейерверк эффект
-    dimension.runCommand(
-      `particle minecraft:totem_particle ${project.center.x} ${project.center.y + project.height + 1} ${project.center.z}`
-    );
   } catch (e) {
     // Не критично
   }
